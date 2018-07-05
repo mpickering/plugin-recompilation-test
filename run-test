@@ -1,0 +1,7 @@
+rm Qux.hi Qux.o Qux.dyn_o
+rm test.hi test.o test.dyn_o
+ghc test.hs -package ghc -dynamic-too
+touch Qux.hs
+ghc test.hs -package ghc -dynamic-too
+
+
